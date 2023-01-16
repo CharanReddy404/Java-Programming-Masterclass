@@ -1,7 +1,7 @@
 public class Car {
-    private String make="Tesla";
-    private String model="Model X";
-    private String color="Gray";
+    public String make="Tesla";
+    public String model="Model X";
+    public String color="Gray";
     private int doors=2;
     private boolean convertible = true;
 
