@@ -25,6 +25,26 @@ public class Car {
         return convertible;
     }
 
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setDoors(int doors) {
+        this.doors = doors;
+    }
+
+    public void setConvertible(boolean convertible) {
+        this.convertible = convertible;
+    }
+
     public void describCar(){
         System.out.println(doors+"-Door "+color+" "+make+" "+model+" "+(convertible?"Convertible" : ""));
     }
