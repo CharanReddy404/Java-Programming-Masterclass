@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         for(int i=1; i<=5;i++){
-             Student s = new Student("S92300"+i,
+             LPAStudent s = new LPAStudent("S92300"+i,
                      switch (i){
                          case 1 ->"charan";
                          case 2 ->"charan1";
@@ -12,6 +12,8 @@ public class Main {
                          },
                      "17/01/2023",
              "Java Masterclass");
+
+            System.out.println(s);
         }
     }
 }
