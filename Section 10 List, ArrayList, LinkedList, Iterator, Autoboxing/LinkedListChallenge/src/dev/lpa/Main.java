@@ -45,14 +45,26 @@ public class Main {
             switch (menuItem){
                 case "F":
                     System.out.println("User wants to go forward");
+                    if(!forward){
+                        forward= true;
+                        if(iterator.hasNext()){
+                            iterator.next();
+                        }
+                    }
                     if(iterator.hasNext()){
                         System.out.println(iterator.next());
                     }
                     break;
                 case "B":
                     System.out.println("User wants to go backwards");
+                    if(forward){
+                        forward= false;
+                        if(iterator.hasPrevious()){
+                            iterator.previous();
+                        }
+                    }
                     if(iterator.hasPrevious()){
-                        System.out.println(iterator.previous());
+                        System.out.println(iterator.previous() );
                     }
                     break;
                 case "M":
