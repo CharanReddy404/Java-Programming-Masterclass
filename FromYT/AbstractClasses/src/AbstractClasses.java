@@ -22,5 +22,7 @@ public class AbstractClasses {
         bus.move();
         bus.brake();
         System.out.println(bus.color);
+        bus.color="red";
+        System.out.println(bus.color);
     }
 }
